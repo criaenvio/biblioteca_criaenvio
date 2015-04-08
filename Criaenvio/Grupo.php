@@ -101,4 +101,20 @@ class Grupo extends Entidade {
         return array('contatos');
     }
 
+
+    /**
+     * Valida os parâmetros utilizados na criação do grupo.
+     * @param $parametros array Informações usadas na criação do registro.
+     * @return mixed Objeto salvo com dados preenchidos.
+     * @throws \BadMethodCallException Caso o parâmetro nome informado seja inválido.
+     */
+    public function criar($parametros){
+
+        if (isset($parametros['nome']) && is_bool($parametros['nome'])) {
+            throw new \BadMethodCallException('O parâmetro "parametros" deve ser um array com valores válidos.');
+        }
+
+        return parent::criar($parametros);
+    }
+
 } 

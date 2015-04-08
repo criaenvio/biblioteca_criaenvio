@@ -206,7 +206,7 @@ abstract class Entidade {
     /**
      * Cria um novo registro relativo a classe que o chamou.
      * @param $parametros array Informações usadas na criação do registro.
-     * @return mixed Objeto salva com dados preenchidos.
+     * @return mixed Objeto salvo com dados preenchidos.
      * @throws \BadMethodCallException Caso os parâmetros informados sejam inválidos.
      */
     public function criar($parametros) {
