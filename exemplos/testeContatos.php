@@ -178,23 +178,23 @@ define('NN_CHAVE', '--suachave--');
 //}
 
 
-/**
- * Criando contato e inserindo em grupo
- */
-try {
-
-    $contato = (new Criaenvio\Contato())->criar(
-                    array(
-                        'nome' => 'nóme do contato',
-                        'email' => 'contatinho004@contato.com.br'
-                    )
-                )->inscrever(
-                        array('ID_G1','ID_G2')
-                   );
-
-    echo '<pre>';
-    print_r($contato);
-
-} catch (Exception $e) {
-    var_dump($e); die;
-}
+///**
+// * Criando contato e inserindo em grupo
+// */
+//try {
+//
+//    $contato = (new Criaenvio\Contato())->criar(
+//                    array(
+//                        'nome' => 'nóme do contato',
+//                        'email' => 'contatinho004@contato.com.br'
+//                    )
+//                )->inscrever(
+//                        array('ID_G1','ID_G2')
+//                   );
+//
+//    echo '<pre>';
+//    print_r($contato);
+//
+//} catch (Exception $e) {
+//    var_dump($e); die;
+//}
