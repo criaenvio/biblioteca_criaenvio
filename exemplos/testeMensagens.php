@@ -22,3 +22,22 @@ try {
 } catch (Exception $e) {
     var_dump($e); die;
 }
+
+/**
+ * Removendo uma mensagem.
+ */
+//try {
+//    $id = 'i';
+////    $id = 'n0Ex1st3';
+//
+//    $resultado = (new Criaenvio\Mensagem($id))->remover();
+//
+//    if ($resultado) {
+//        echo 'sucesso';
+//    } else {
+//        echo 'falha';
+//    }
+//
+//} catch (Exception $e) {
+//    echo $e->getMessage();
+//}
