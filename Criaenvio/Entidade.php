@@ -250,7 +250,17 @@ abstract class Entidade {
 
         $retorno = $this->_realizaSolicitacao();
 
-        return (isset($retorno->data->OK) && $retorno->data->OK == 'OK');
+        $status = (isset($retorno->data->OK) && $retorno->data->OK == 'OK');
+
+        if (isset($retorno->data->registro)) {
+
+            $registro = Utils::toObjeto(static::NOME_CLASSE, $retorno->data->registro);
+
+            return [$status, $registro];
+
+        } else {
+            return $status;
+        }
     }
 
     /**

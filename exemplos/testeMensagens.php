@@ -5,6 +5,9 @@ include_once '../Criaenvio_loader.php';
 // VOCÊ DEVE ALTERAR SUA CHAVE AQUI
 define('NN_CHAVE', '=chave=');
 
+/*
+ * Consulta de mensagens
+ */
 //try {
 //
 //    $parametros = null; // sem parâmetros
@@ -23,7 +26,7 @@ define('NN_CHAVE', '=chave=');
 //    var_dump($e); die;
 //}
 
-/**
+/*
  * Removendo uma mensagem.
  */
 //try {
@@ -42,7 +45,7 @@ define('NN_CHAVE', '=chave=');
 //    echo $e->getMessage();
 //}
 
-/**
+/*
  * Carregando uma mensagem.
  */
 //try {
@@ -56,7 +59,7 @@ define('NN_CHAVE', '=chave=');
 //    echo $e->getMessage();
 //}
 
-/**
+/*
  * Criação de mensagem.
  */
 //try {
@@ -81,3 +84,28 @@ define('NN_CHAVE', '=chave=');
 //    echo $e->getMessage();
 //    die;
 //}
+
+/*
+ * Edição de mensagem
+ */
+
+try {
+
+    $id = '-g'; $dados = array('assunto' => 'editado1 Nóvamente');
+//    $id = '-r'; $dados = array('pasnome' => 'param errado');     // sem parâmetro necessário
+//    $id = 'n0ex1st';    $dados = array('nome' => 'ssss');   // grupo não existente
+
+    list($resultado, $registro) = (new Criaenvio\Mensagem($id))->editar($dados);
+
+    if ($resultado) {
+        echo 'sucesso. registro editado:';
+
+        var_dump($registro);
+
+    } else {
+        echo 'falha';
+    }
+
+} catch (Exception $e) {
+    var_dump($e);
+}
