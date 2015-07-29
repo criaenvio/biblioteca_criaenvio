@@ -3,7 +3,7 @@
 include_once '../Criaenvio_loader.php';
 
 // VOCÊ DEVE ALTERAR SUA CHAVE AQUI
-define('NN_CHAVE', '=chave=');
+define('NN_CHAVE', '--chave--');
 
 /*
  * Consulta de mensagens
@@ -75,10 +75,10 @@ define('NN_CHAVE', '=chave=');
 //        'mensagem_descadastro'  => 'Deseja sair da lista? Clique no link ao lado'
 //    );
 //
-//    $grupo = (new Criaenvio\Mensagem())->criar($dados);
+//    $mensagem = (new Criaenvio\Mensagem())->criar($dados);
 //
 //    echo '<pre>';
-//    print_r($grupo);
+//    print_r($mensagem);
 //
 //} catch (Exception $e) {
 //    echo $e->getMessage();
@@ -89,23 +89,39 @@ define('NN_CHAVE', '=chave=');
  * Edição de mensagem
  */
 
-try {
-
-    $id = '-g'; $dados = array('assunto' => 'editado1 Nóvamente');
-//    $id = '-r'; $dados = array('pasnome' => 'param errado');     // sem parâmetro necessário
-//    $id = 'n0ex1st';    $dados = array('nome' => 'ssss');   // grupo não existente
-
-    list($resultado, $registro) = (new Criaenvio\Mensagem($id))->editar($dados);
-
-    if ($resultado) {
-        echo 'sucesso. registro editado:';
-
-        var_dump($registro);
-
-    } else {
-        echo 'falha';
-    }
-
-} catch (Exception $e) {
-    var_dump($e);
-}
+//try {
+//
+//    $id = '-g'; $dados = array('assunto' => 'editado1 Nóvamente');
+//    $id = 'n0ex1st';    $dados = array('nome' => 'ssss');   // mensagem não existente
+//    $id = 'Tdd'; $dados = array('assunto' => '---assuntoo--', 'html' => '<html>
+//	<head>
+//		<title></title>
+//	</head>
+//	<body>
+//		<h1 style="text-align: center;">
+//			<img src="http://meioambiente.culturamix.com/blog/wp-content/gallery/papel-de-parede-de-luar/papel-de-parede-de-luar-6.jpg" /><span style="font-family:comic sans ms;">Atlas</span></h1>
+//		<p style="text-align: center;">
+//			<img alt="" src="http://i.enviaemm.com/1/Image/NATURE-WhiteMountainsOfPortDuSoleilFrance_1280x1024.jpg" style="width: 185px; height: 272px;" /></p>
+//		<p style="text-align: center;">
+//			américa do sul &#38; teste</p>
+//		<p>
+//			países: argentina, chile, uruguai, brasil, paraguai, colômbia, peru, venezuela, equador, guiana, guiana francesa, suriname</p>
+//	</body>
+//</html>
+//
+//');
+//
+//    list($resultado, $registro) = (new Criaenvio\Mensagem($id))->editar($dados);
+//
+//    if ($resultado) {
+//        echo 'sucesso. registro editado:';
+//
+//        var_dump($registro);
+//
+//    } else {
+//        echo 'falha';
+//    }
+//
+//} catch (Exception $e) {
+//    echo $e->getMessage();
+//}
