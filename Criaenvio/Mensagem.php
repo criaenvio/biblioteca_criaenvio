@@ -51,4 +51,20 @@ class Mensagem extends Entidade {
         return parent::criar($parametros);
     }
 
+
+    public function listaTeste() {
+
+        if (is_null($this->id)) {
+            throw new \BadMethodCallException('O identificador (id) do objeto não foi informado.');
+        }
+
+        //Configura variáveis necessárias para requisição.
+        $this->_tipoSolicitacao = $this::TIPO_SOLICITACAO_GET;
+        $this->_caminho = '/'.$this->id.'/lista_teste';
+
+        $retorno = $this->_realizaSolicitacao();
+
+        return (isset($retorno->data->OK) && $retorno->data->OK == 'OK');
+    }
+
 } 

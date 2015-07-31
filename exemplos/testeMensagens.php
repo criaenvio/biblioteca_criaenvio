@@ -3,7 +3,7 @@
 include_once '../Criaenvio_loader.php';
 
 // VOCÊ DEVE ALTERAR SUA CHAVE AQUI
-define('NN_CHAVE', '--chave--');
+define('NN_CHAVE', '-chave-=');
 
 /*
  * Consulta de mensagens
@@ -118,6 +118,25 @@ define('NN_CHAVE', '--chave--');
 //
 //        var_dump($registro);
 //
+//    } else {
+//        echo 'falha';
+//    }
+//
+//} catch (Exception $e) {
+//    echo $e->getMessage();
+//}
+
+/*
+ * Envio para Lista Teste com uma mensagem.
+ */
+//try {
+//    $id = 'T5';
+////    $id = 'n0Ex1st3';
+//
+//    $resultado = (new Criaenvio\Mensagem($id))->listaTeste();
+//
+//    if ($resultado) {
+//        echo 'teste enviado';
 //    } else {
 //        echo 'falha';
 //    }
