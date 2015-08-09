@@ -18,7 +18,7 @@ class Envio extends Entidade {
 
 
     public function embedsPermitidos() {
-        return [];
+        return ['listas', 'mensagem', 'remetente'];
     }
 
 

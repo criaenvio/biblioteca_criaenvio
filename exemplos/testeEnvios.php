@@ -26,3 +26,22 @@ define('NN_CHAVE', '-chave-=');
 //} catch (Exception $e) {
 //    echo $e->getMessage(); die;
 //}
+
+/**
+ * Carregando um envio.
+ */
+
+//try {
+////    $id = 'Lz';  $embeds = array('listas', 'mensagem');    // com embeds
+////    $id = null; $embeds = array('grupos');      // sem id
+//    $id = 'f';  $embeds = null; // sem embed
+////    $id = 'naoexiste'; $embeds = array();
+////    $id = 'Lz'; $embeds = array('listas','mensagem', 'remetente');
+//
+//    $envio = (new Criaenvio\Envio($id))->carregar($embeds);
+//
+//    echo '<pre>';
+//    print_r($envio);
+//} catch (Exception $e) {
+//    echo $e->getMessage(); die;
+//}

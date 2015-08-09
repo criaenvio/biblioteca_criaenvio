@@ -43,6 +43,7 @@ abstract class Utils {
     public static function defineClasse($nome) {
         switch ($nome) {
             case 'grupos':
+            case 'listas':
                 return Grupo::NOME_CLASSE;
                 break;
             case 'campos':
@@ -50,6 +51,12 @@ abstract class Utils {
                 break;
             case 'contatos':
                 return Contato::NOME_CLASSE;
+                break;
+            case 'remetente':
+                return Remetente::NOME_CLASSE;
+                break;
+            case 'mensagem':
+                return Mensagem::NOME_CLASSE;
                 break;
             default:
                 die('Relacionamento não identificado.');
