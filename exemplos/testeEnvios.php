@@ -45,3 +45,26 @@ define('NN_CHAVE', '-chave-=');
 //} catch (Exception $e) {
 //    echo $e->getMessage(); die;
 //}
+
+/**
+ * Criando um envio.
+ */
+
+//try {
+//
+//    $dados = [
+//        'mensagem'  => 'TI',
+//        'listas'    => '3a,3s,3,34',
+//        //'data_de_inicio'    => '02/10/2015 20:22',
+//        'data_de_inicio'    => 'agora',
+//        'remetente' => 'E'
+//    ];
+//
+//    $envio = (new Criaenvio\Envio())->criar($dados);
+//
+//    echo '<pre>';
+//    print_r($envio);
+//
+//} catch (Exception $e) {
+//    echo $e->getMessage();
+//}
