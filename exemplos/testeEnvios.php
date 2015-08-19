@@ -68,3 +68,68 @@ define('NN_CHAVE', '-chave-=');
 //} catch (Exception $e) {
 //    echo $e->getMessage();
 //}
+
+
+///**
+// * Pausando um envio.
+// */
+//
+//try {
+//
+//    $id = 'JG';
+////    $id = null;
+//
+//    $envio = (new Criaenvio\Envio($id))->pausar();
+//
+//    if ($envio) {
+//        echo 'Envio pausado com sucesso.';
+//    } else {
+//        echo 'Falha ao pausar envio.';
+//    }
+//
+//} catch (Exception $e) {
+//    echo $e->getMessage();
+//}
+
+///**
+// * Cancelando um envio.
+// */
+//
+//try {
+//
+//    $id = 'JG';
+////    $id = null;
+//
+//    $envio = (new Criaenvio\Envio($id))->cancelar();
+//
+//    if ($envio) {
+//        echo 'Envio cancelado com sucesso.';
+//    } else {
+//        echo 'Falha ao cancelar envio.';
+//    }
+//
+//} catch (Exception $e) {
+//    echo $e->getMessage();
+//}
+
+///**
+// * Retomando um envio.
+// */
+//
+//try {
+//
+//    $id = 'J5'; $dados = ['data' => 'agora'];
+//    $id = 'J5'; $dados = ['data' => '21/08/2015 12:12'];
+////    $id = null;
+//
+//    $envio = (new Criaenvio\Envio($id))->retomar($dados);
+//
+//    if ($envio) {
+//        echo 'Envio retomado/agendado com sucesso.';
+//    } else {
+//        echo 'Falha ao retomar/agendar envio.';
+//    }
+//
+//} catch (Exception $e) {
+//    echo $e->getMessage();
+//}
