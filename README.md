@@ -1,5 +1,5 @@
 # biblioteca_criaenvio
-Biblioteca em PHP para utilização da API [Criaenvio][2]. Permite realizar uma série de operações para gerenciar contatos, grupos e campos personalizados de sua conta.
+Biblioteca em PHP para utilização da API [Criaenvio][2]. Permite realizar uma série de operações para gerenciar contatos, listas, campos personalizados, remetentes, mensagens e envios de sua conta.
 
 # Instalação/Utilização
 
