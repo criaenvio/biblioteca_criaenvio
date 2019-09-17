@@ -1,6 +1,6 @@
 <?php
 
-define('NN_URL_API', 'http://api.criaenvio.com/');
+define('NN_URL_API', 'https://api.criaenvio.com/');
 define('NN_VERSAO', 'v1');
 
 spl_autoload_register(
