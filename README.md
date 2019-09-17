@@ -1,5 +1,5 @@
 # biblioteca_criaenvio
-Biblioteca em PHP para utilização da API [Criaenvio][2]. Permite realizar uma série de operações para gerenciar contatos, grupos e campos personalizados de sua conta.
+Biblioteca em PHP para utilização da API Criaenvio. Permite realizar uma série de operações para gerenciar contatos, grupos e campos personalizados de sua conta.
 
 # Instalação/Utilização
 
@@ -40,4 +40,3 @@ Criando um contato e inserindo em um grupo:
    
 
 [1]: http://static.criaenvio.com/api_documentacao/
-[2]: http://www.criaenvio.com/
